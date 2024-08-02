@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정성민 포트폴리오</title>
+
+  <!-- 파비콘 적용 -->
+  <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용 
+   최상위 경로에 없거나, ico가 아닌 별도 파일을 가진 경우에는 <linK> 로 적용
+    
+  (참고) 파비콘 만들기 : https://iconifier.net
+  -->
+    <link rel="icon" href="./favicon.ico">
+
+  <!-- reset.css -->
+  <!-- 스타일 초기화: 브라우저 별로 다른 기본 스타일이 적용되는 것을 초기화 -->
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+
+  <!-- 구글 머티리얼 아이콘 -->
+  <!-- 구글에서 제공하는 머티리얼 스타일 아이콘, 글자처럼 취급이 가능한 장점이있다. -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <!-- 구글 웹폰트 연결 -->
+  <!-- 오픈 라이센스 폰트, 한글 지원하는지 확인 및 필요한 굵기를 연결 -->
+  <!-- 한글L Noto Sans Korean 영문: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+  <!-- 폰트 테스트 -->
+  <!-- <span>헬로 월드 ㅋㅋ</span>
+  <span class="font-en">Hello World!</span> -->
+
+  <!-- Header -->
+   <header>
+    <div class="inner">
+      <div class="header__title">
+        <a href="index.html" class="banner">성민이 포트폴리오</a>
+      </div>
+      <!-- 메뉴 -->
+       <nav class="font-en">
+          <ul>
+            <!-- 본인의 메뉴 구조에 맞게 변경 -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+          </ul>
+       </nav>
+       <a href="javascript:void(0)" class="btn-hamburger">
+        <span class="material-symbols-outlined">menu</span>
+       </a>
+    </div>
+   </header>
+
+  <!-- Home -->
+   <section id="home" class="home">
+    <div class="inner">
+      <h2 class="home__title font-en">정성민</h2>
+      <p class="home__title font-en">풀스택 개발자 포트폴리오</p>
+      <div class="home_container">
+          <a href="#about" class="home_btn font-en">click me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about scroll-spy">
+    <div class="inner">
+      <h2 class="title font-en">About Me</h2>
+      <div class="about__wrapper">
+        <div class="about__container">
+          <div class="about__img">
+            <!-- 본인 프로필 이미지로 변경 -->
+            <img src="images/profile.jpg" alt="프로필">
+            <div class="speech-bubble">
+              <h3><br>시작은 미약하나<br>끝은 창대하리라</h3>
+            </div>
+          </div>
+        </div>
+
+      <div class="about__text">
+        <div class="about__text_box">
+          <div class="about__box_1">
+            <p class="material-symbols-outlined icon">person</p>
+            <div class="about__list_box">
+                <p class="about__info">이름</p>
+                <p class="about__content">정성민</p>
+              </div>
+            </div>
+
+            <div class="about__box_1">
+              <p class="material-symbols-outlined icon">id_card</p>
+              <div class="about__list_box">
+                <p class="about__info">생년월일</p>
+                <p class="about__content">99.09.23</p>
+              </div>
+            </div>
+
+            <div class="about__box_1">
+              <p class="material-symbols-outlined icon">home</p>
+              <div class="about__list_box">
+                <p class="about__info">거주지</p>
+                <p class="about__content">인천광역시 연수구</p>
+              </div>
+            </div>
+        </div>
+
+          <div class="about__text_box">
+            <div class="about__box_2">
+              <p class="material-symbols-outlined icon">call</p>
+              <div class="about__list_box">
+                <p class="about__info">전화번호</p>
+                <p class="about__content">010-3948-8405</p>
+              </div>
+            </div>
+
+            <div class="about__box_2">
+              <p class="material-symbols-outlined icon">mail</p>
+              <div class="about__list_box">
+                <p class="about__info">이메일</p>
+                <p class="about__content">sungmin990923@naver.com</p>
+              </div>
+            </div>
+
+            <div class="about__box_2">
+              <p class="material-symbols-outlined icon">school</p>
+              <div class="about__list_box">
+                <p class="about__info">학력</p>
+                <p class="about__content">유한대학교 <br> (IT소프트웨어 공학과)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skill" class="skill scroll-spy">
+    <div class="inner">
+      <h2 class="title font-en">Skill</h2>
+      <div class="skill__list">
+        <p class="sub_title font-en">Server</p>
+        <div class="img__container">
+          <img src="images/skill/Aix_logo.jpg" alt="aix 로고" class="img_logo">
+          <img src="images/skill/IBM_Storage_logo.jpg" alt="storage 로고" class="img_logo">
+          <img src="images/skill/redhat_logo.jpg" alt="redhat 로고" class="img_logo">
+          <img src="images/skill/window_logo.jpg" alt="window 로고" class="img_logo">
+        </div>
+
+        <p class="sub_title font-en">FrontEnd</p>
+        <div class="img__container">
+          <img src="images/skill/html_logo.jpg" alt="html 로고" class="img_logo">
+          <img src="images/skill/css_logo.jpg" alt="css 로고" class="img_logo">
+          <img src="images/skill/js_logo.jpg" alt="javascript 로고" class="img_logo">
+        </div>
+        
+        <p class="sub_title font-en">BackEnd</p>
+        <div class="img__container">
+          <img src="images/skill/jsp_logo.jpg" alt="jsp 로고" class="img_logo">
+          <img src="images/skill/java_logo.jpg" alt="java 로고" class="img_logo">
+          <img src="images/skill/java_spring_logo.jpg" alt="spring 로고" class="img_logo">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project -->
+  <section id="project" class="project scroll-spy">
+    <div class="inner">
+      <h2 class="title">Project</h2>
+      <div class="port">
+        <div class="port__img">
+          <div class="port__wrapper">
+            <img src="images/project/work_1.jpg" alt="포트폴리오1" id="myImage">
+            <!-- Modal -->
+            <div id="modal">
+              <div class="modal__inner">
+                    <img src="images/project/work_1.jpg" alt="프로젝트 사진 모달" class="modal__slide">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="port__text">
+          <h3>프로젝트 명 : 여기쩔더라</h3>
+          <br>
+          <h3>팀명 : 우당탕탕 남매들</h3>
+          <ul>
+            <li>
+              <span class= "material-symbols-outlined">check_small </span> 
+              <span>주요 기능 : </span> HOT 게시글, 로그인, 회원가입 구현, 썸네일 게시판 작성
+            </li>
+            <li>
+              <span class= "material-symbols-outlined">check_small </span> 
+              <span>적용 기술 : </span> HTML, CSS, JS, JSP, Tomcat, Mysql, Spring Boot
+            </li>
+            <li>
+              <span class= "material-symbols-outlined">check_small </span> 
+              <span>GitHub : </span> https://github.com/mini0923
+            </li>
+            <li>
+              <span class= "material-symbols-outlined">check_small </span> 
+              <span>설명란 : </span> <br>
+              <b style="font-weight: 900;">사이트를 운영하는 운영진이 검증한 맛집들을 소개해주는 웹사이트입니다.</b> <br>
+              운영진이 올리는 맛집 게시판을 통해 회원들이 좋아요를 누를 수 있으며 <br>
+              조회수 및 좋아요 개수를 통해 HOT 게시글로 옮겨지게 제작하였습니다. <br>
+              커뮤니티 게시판은 이용자들 끼리 게시글을 남기며 소통할 수 있고, <br>
+              마이페이지를 통해 회원 정보 수정, 좋아요한 리스트, <br>
+              자신이 작성한 글과 댓글을 볼 수 있습니다. <br>
+              관리자 계정으로 접속 시 회원 및 게시글관리를 할 수 있도록 제작하였습니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner">
+      <p class="copyright">
+        &copy; <span class="this-year"></span>
+        정성민. <span class="font-en">All Right Reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  
+  
+  <!-- Scroll to top -->
+   <div id="to-top">
+    <a href="#">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+   </div>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
